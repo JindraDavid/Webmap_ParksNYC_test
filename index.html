@@ -388,6 +388,10 @@
                         <th scope="row">Total Risk</th>\
                         <td class="visible-with-data" id="Sports F14">' + (feature.properties['Sports F14'] !== null ? autolinker.link(String(feature.properties['Sports F14']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
+                    <tr>\
+                        <th scope="row">Attendance</th>\
+                        <td class="visible-with-data" id="Sports F15">' + (feature.properties['Sports F15'] !== null ? autolinker.link(String(feature.properties['Sports F15']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
                 </table>';
                 var content = removeEmptyRowsFromPopupContent(popupContent, feature);
                 layer.on('popupopen', function(e) {
